@@ -1,0 +1,23 @@
+,model,best_params,train_accuracy,test_accuracy,precision,recall,f1_score,roc_auc,cv_mean_accuracy,cv_std_accuracy,confusion_matrix,complexity,score
+SVM,"SVC(C=10, gamma='auto', probability=True, random_state=42)","{'C': 10, 'gamma': 'auto', 'kernel': 'rbf'}",0.9818417639429312,0.9533678756476683,0.9428571428571428,0.9705882352941176,0.9565217391304348,0.9946132299073476,0.9325429409300376,0.01342296783143895,"[[85  6]
+ [ 3 99]]",1,0.9528661011393753
+Gradient Boosting,"GradientBoostingClassifier(max_depth=5, random_state=42)","{'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100}",1.0,1.0,1.0,1.0,1.0,1.0,0.9766568914956011,0.02195917024487398,"[[ 91   0]
+ [  0 102]]",100,0.8953313782991201
+XGBoost,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric='logloss',
+              feature_types=None, gamma=None, grow_policy=None,
+              importance_type=None, interaction_constraints=None,
+              learning_rate=0.1, max_bin=None, max_cat_threshold=None,
+              max_cat_to_onehot=None, max_delta_step=None, max_depth=5,
+              max_leaves=None, min_child_weight=None, missing=nan,
+              monotone_constraints=None, multi_strategy=None, n_estimators=100,
+              n_jobs=None, num_parallel_tree=None, random_state=42, ...)","{'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}",1.0,0.9844559585492227,1.0,0.9705882352941176,0.9850746268656716,1.0,0.9805446166736489,0.01790143260530253,"[[91  0]
+ [ 3 99]]",100,0.8852280943191857
+Random Forest,"RandomForestClassifier(n_jobs=-1, random_state=42)","{'max_depth': None, 'min_samples_split': 2, 'n_estimators': 100}",1.0,0.9844559585492227,1.0,0.9705882352941176,0.9850746268656716,1.0,0.9779472140762463,0.020372600970135168,"[[91  0]
+ [ 3 99]]",100,0.8847086137997051
+Logistic Regression,"LogisticRegression(C=0.01, max_iter=1000, random_state=42, solver='liblinear')","{'C': 0.01, 'penalty': 'l2'}",0.8365758754863813,0.7772020725388601,0.7521367521367521,0.8627450980392157,0.8036529680365296,0.8659771600948072,0.8314201927105154,0.016032934796635097,"[[62 29]
+ [14 88]]",8,0.802325489319305
+Neural Network,"MLPClassifier(early_stopping=True, random_state=42)","{'alpha': 0.0001, 'hidden_layer_sizes': (100,), 'learning_rate': 'constant'}",0.8274967574578469,0.7409326424870466,0.7203389830508474,0.8333333333333334,0.7727272727272727,0.8533721180780004,0.8120318391286133,0.04103850771667681,"[[58 33]
+ [17 85]]",100,0.6810592175666553
